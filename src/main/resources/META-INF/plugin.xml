@@ -1,18 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.nduyhai.wintermind</id>
-    <name>wintermind</name>
-    <vendor>nduyhai</vendor>
+  <id>com.github.nduyhai.wintermind</id>
+  <name>wintermind</name>
+  <vendor>nduyhai</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+  <resource-bundle>messages.WinterMindBundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.nduyhai.wintermind.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow factoryClass="com.github.nduyhai.wintermind.toolWindow.WinterMindWindowFactory"
+      id="WinterMindWindow"/>
+  </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.nduyhai.wintermind.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+  <applicationListeners>
+    <listener
+      class="com.github.nduyhai.wintermind.listeners.WinterMindApplicationActivationListener"
+      topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+  </applicationListeners>
 </idea-plugin>
