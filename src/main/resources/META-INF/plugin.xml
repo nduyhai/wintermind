@@ -5,6 +5,7 @@
   <vendor>nduyhai</vendor>
 
   <depends>com.intellij.modules.platform</depends>
+  <depends>org.intellij.plugins.markdown</depends>
 
   <resource-bundle>messages.WinterMindBundle</resource-bundle>
 
@@ -18,4 +19,5 @@
       class="com.github.nduyhai.wintermind.listeners.WinterMindApplicationActivationListener"
       topic="com.intellij.openapi.application.ApplicationActivationListener"/>
   </applicationListeners>
+
 </idea-plugin>

@@ -9,7 +9,7 @@ import com.intellij.ui.content.ContentFactory
 class WinterMindWindowFactory : ToolWindowFactory {
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
-        val winterMindWindow = WinterMindWindow(toolWindow)
+        val winterMindWindow = WinterMindWindow(project, toolWindow)
         val content =
             ContentFactory.getInstance()
                 .createContent(winterMindWindow.getContent(), null, false)
